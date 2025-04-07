@@ -6,17 +6,16 @@
   concluding module, we'll explore advanced topics and long-term maintenance strategies that round out your professional skill set. These concepts will help you maintain WordPress sites over time, handle complex requirements, and
   continue refining your development process for years to come."
 
-## Shot 2: Multisite Management Overview (Screen with Diagram)
+## Shot 2: Custom Plugin Development in Professional Architecture (Screen with Diagram)
 
-**TEXT:** "Let's start with advanced multisite management. WordPress multisite networks present unique challenges beyond single-site installations, especially in professional environments. We'll explore strategies for managing
-  multiple sites within one installation, including network-wide plugins, domain mapping, and site-specific configurations. I'll show you how our professional workflow adapts to these requirements, ensuring consistent management
-  across all sites in your network."
+**TEXT:** "Let's start with custom plugin development in our professional environment. When building on our Bedrock-based architecture, we have excellent opportunities to create well-structured, maintainable plugins. We'll explore strategies for developing 
+  custom plugins that integrate seamlessly with our workflow, including proper namespacing, Composer integration, and automated testing. I'll show you how our professional workflow enhances plugin development, ensuring code quality and compatibility 
+  across environments."
 
-## Shot 3: Site-Specific Configuration in Multisite (Screen Recording of Code Editor)
+## Shot 3: Advanced Plugin Architecture (Screen Recording of Code Editor)
 
-**TEXT:** "One challenge in multisite environments is maintaining site-specific configurations while sharing core code. Let's examine techniques for handling site-specific settings, including environment variables for individual
-  sites, dynamic configuration loading based on the current site, and proper organization of site-specific theme customizations. These approaches allow you to maintain a single codebase while accommodating the unique needs of each
-  site in your network."
+**TEXT:** "Creating plugins in a professional environment requires careful architecture decisions. Let's examine techniques for building robust plugins, including separation of concerns, dependency injection, and proper use of WordPress hooks. 
+  These approaches allow you to maintain clean, testable code while leveraging WordPress APIs effectively. I'll demonstrate how these principles apply to real-world plugin development scenarios."
 
 ## Shot 4: Custom Plugin Development in Professional Architecture (Screen Recording of Code Editor)
 
@@ -106,19 +105,19 @@
 
 ## Key Points for Memorization
 
-### Multisite Management Essentials:
-- Network-wide vs. site-specific plugins
-- Domain mapping configuration
-- Shared codebase management
-- Network admin functionality
-- Site-specific database considerations
+### Custom Plugin Development Essentials:
+- Modern PHP architecture principles
+- WordPress hook integration
+- Namespacing and autoloading
+- OOP design patterns for WordPress
+- Composer package integration
 
-### Site-Specific Configuration Techniques:
-- Environment variables for individual sites
-- Dynamic configuration loading
-- Site-specific theme customizations
-- Content synchronization between sites
-- Database prefix management
+### Advanced Plugin Architecture Techniques:
+- Separation of concerns
+- Dependency injection
+- Service container usage
+- Unit testable WordPress code
+- Plugin extensibility patterns
 
 ### Custom Plugin Development Best Practices:
 - Modern PHP structure with namespacing

@@ -110,12 +110,24 @@
 
 ## Module 10: Advanced Topics and Maintenance (15 minutes)
 
-- Multisite management
 - Custom plugin development in this architecture
+- Advanced plugin architecture techniques
 - Updating WordPress core and dependencies
 - Handling database migrations
 - Troubleshooting common issues
 - Long-term maintenance strategy
+
+## Module 11: Advanced Multisite Management (15 minutes)
+
+- Multisite architecture overview
+- Enabling multisite in Bedrock
+- Local development for multisite
+- Network administration
+- Site-specific configuration techniques
+- Domain mapping configuration
+- Database considerations for multisite
+- Content synchronization strategies
+- Scaling multisite networks
 
 ## Conclusion (5 minutes)
 
@@ -196,10 +208,19 @@
 
 ### Module 10: Advanced Topics
 
-- Show multisite management interfaces
-- Demonstrate updating process
+- Show custom plugin development architecture
+- Demonstrate advanced plugin patterns
+- Show updating process
 - Show troubleshooting common issues
 - Provide maintenance checklist
+
+### Module 11: Advanced Multisite Management
+
+- Show multisite management interfaces
+- Demonstrate network administration
+- Show site-specific configurations
+- Demonstrate domain mapping setup
+- Show multisite synchronization techniques
 
 ### Conclusion
 
