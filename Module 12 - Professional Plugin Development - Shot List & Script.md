@@ -50,7 +50,7 @@
 
 ## Shot 13: Plugin Versioning Best Practices (Talking Head with Graphics)
 
-**TEXT:** "Proper versioning is essential for WordPress plugins. We'll implement semantic versioning to communicate the nature of changes to users. Major versions indicate breaking changes, minor versions add features in a backward-compatible way, and patch versions fix bugs. We'll connect our version numbers in the plugin header, readme.txt, and release tags to ensure consistency. This approach provides clear upgrade paths for users and helps manage plugin updates."
+**TEXT:** "Proper versioning is essential for WordPress plugins. We'll implement semantic versioning to communicate the nature of changes to users. Major versions indicate breaking changes, minor versions add features in a backward-compatible way, and patch versions fix bugs. WordPress plugin headers should use just the numbers without a 'v' prefix, like '1.0.0' rather than 'v1.0.0'. However, in Git, we commonly tag versions with the 'v' prefix, creating a distinction between Git tags and WordPress version headers. We'll connect our version numbers in the plugin header, readme.txt, and release tags to ensure consistency. This approach provides clear upgrade paths for users and helps manage plugin updates."
 
 ## Shot 14: Handling Plugin Updates (Screen Recording)
 
@@ -152,12 +152,13 @@
 - Version availability management
 
 ### Versioning Strategy:
-- Semantic versioning implementation
+- Semantic versioning implementation (MAJOR.MINOR.PATCH)
+- No 'v' prefix in WordPress plugin headers (1.0.0, not v1.0.0)
 - Version synchronization across files
 - Plugin header version requirements
 - Readme.txt version management
 - Changelog maintenance
-- Git tag and release correlation
+- Git tag conventions (v1.0.0 for Git tags only)
 
 ### Update Management:
 - Testing updates before release

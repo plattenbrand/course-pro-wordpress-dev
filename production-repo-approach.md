@@ -138,7 +138,8 @@ Create a .distignore file to specify which files should be excluded from product
      - Remove development files
      - Strip the -dev suffix
      - Push to the production repository
-     - Create a version tag
+     - Create a Git version tag (using 'v' prefix, e.g., v1.0.0)
+     - Note: While Git tags use the 'v' prefix, WordPress plugin headers use just numbers (1.0.0)
 
 3. **SatisPress Integration**:
    - Deployer for Git monitors the production repository
@@ -153,9 +154,9 @@ The production repository is managed automatically through the build script. You
 
 The build script creates version tags in the production repository:
 
-- `v1.0.0`, `v1.0.1`, etc. 
+- `1.0.0`, `1.0.1`, etc. 
 
-These tags are used by SatisPress to identify versions.
+These tags are used by SatisPress to identify versions. Note that WordPress plugin versions should not include a 'v' prefix in the version headers.
 
 ## Benefits
 
