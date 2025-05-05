@@ -1,0 +1,100 @@
+/**
+ * Admin Styles
+ */
+
+// Import variables
+@import "variables";
+
+// Plugin Settings Page
+.plugin-settings-wrap {
+  margin: $spacing-large 0;
+  
+  .nav-tab-wrapper {
+    margin-bottom: $spacing-large;
+  }
+  
+  .form-table {
+    th {
+      padding: $spacing-medium $spacing-medium $spacing-medium 0;
+    }
+    
+    td {
+      padding: $spacing-medium 0;
+    }
+  }
+  
+  .plugin-settings-header {
+    margin-bottom: $spacing-large;
+    
+    .plugin-version {
+      display: inline-block;
+      background: $primary-color;
+      color: white;
+      padding: 2px 8px;
+      border-radius: 3px;
+      font-size: $font-size-small;
+      margin-left: $spacing-small;
+    }
+  }
+  
+  // Tabs
+  .tab-content {
+    .tab-pane {
+      display: none;
+      padding: $spacing-medium;
+      
+      &.active {
+        display: block;
+      }
+    }
+  }
+  
+  // Form elements
+  input[type="text"],
+  input[type="number"],
+  textarea,
+  select {
+    border: 1px solid $border-color;
+    border-radius: 3px;
+    
+    &:focus {
+      border-color: $primary-color;
+      box-shadow: 0 0 0 1px $primary-color;
+    }
+  }
+  
+  // System info textarea
+  .system-info {
+    width: 100%;
+    height: 200px;
+    font-family: monospace;
+    background: $background-color;
+    padding: $spacing-medium;
+    border: 1px solid $border-color;
+    border-radius: 3px;
+  }
+}
+
+// Media uploader styles
+.plugin-media-uploader {
+  margin: $spacing-medium 0;
+  
+  .image-preview {
+    max-width: 300px;
+    margin-bottom: $spacing-medium;
+    border: 1px solid $border-color;
+    padding: 2px;
+    background: white;
+    
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+  
+  .buttons {
+    display: flex;
+    gap: $spacing-small;
+  }
+}

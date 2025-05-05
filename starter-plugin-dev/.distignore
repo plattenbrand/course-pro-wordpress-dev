@@ -1,0 +1,37 @@
+# Directories
+.git
+.github
+.vscode
+node_modules
+scripts
+src
+tests
+
+# Configuration files
+.editorconfig
+.eslintignore
+.eslintrc.json
+.gitignore
+.distignore
+.prettierrc
+.prettierignore
+phpcs.xml
+phpunit.xml
+composer.lock
+package-lock.json
+tsconfig.json
+webpack.config.js
+
+# Development files
+*.map
+CLAUDE.md
+README-AUTOMATION.md
+
+# Temporary files
+tmp
+temp
+*.tmp
+*.bak
+*.log
+.DS_Store
+Thumbs.db

@@ -1,0 +1,47 @@
+{
+  "name": "plugin-name",
+  "version": "1.0.0-dev",
+  "description": "A WordPress plugin template with development/production separation",
+  "author": "Your Name",
+  "license": "GPL-2.0-or-later",
+  "private": true,
+  "scripts": {
+    "rename": "node scripts/rename-plugin.js",
+    "dev": "webpack --watch --mode=development",
+    "build": "webpack --mode=production",
+    "type-check": "tsc --noEmit",
+    "version:patch": "node scripts/version-bump.js patch",
+    "version:minor": "node scripts/version-bump.js minor",
+    "version:major": "node scripts/version-bump.js major",
+    "to:dev": "node scripts/version-bump.js none --dev",
+    "to:prod": "node scripts/version-bump.js none --prod",
+    "build:prod": "node scripts/build-production.js",
+    "deploy:prod": "node scripts/build-production.js --push --repo git@github.com:your-username/plugin-name.git"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=7.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.7.3",
+    "css-minimizer-webpack-plugin": "^5.0.1",
+    "mini-css-extract-plugin": "^2.7.5",
+    "postcss": "^8.4.21",
+    "postcss-loader": "^7.3.0",
+    "sass": "^1.60.0",
+    "sass-loader": "^13.2.2",
+    "terser-webpack-plugin": "^5.3.7",
+    "ts-loader": "^9.4.2",
+    "typescript": "^5.0.3",
+    "webpack": "^5.78.0",
+    "webpack-cli": "^5.0.1"
+  },
+  "dependencies": {},
+  "browserslist": [
+    "last 2 versions",
+    "not ie < 11",
+    "not op_mini all"
+  ]
+}

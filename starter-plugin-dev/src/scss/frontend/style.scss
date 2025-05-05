@@ -1,0 +1,114 @@
+/**
+ * Frontend Styles
+ */
+
+// Import variables
+@import "variables";
+
+// Plugin Shortcode Container
+.plugin-shortcode-container {
+  margin: $spacing-large 0;
+  font-family: $font-family;
+  color: $text-color;
+  
+  // Header
+  .plugin-shortcode-header {
+    margin-bottom: $spacing-medium;
+    padding-bottom: $spacing-small;
+    border-bottom: 1px solid $border-color;
+    
+    .plugin-shortcode-title {
+      font-size: $font-size-large;
+      margin: 0 0 $spacing-small;
+      color: $primary-color;
+    }
+    
+    .plugin-shortcode-option {
+      font-size: $font-size-small;
+      color: darken($text-color, 10%);
+    }
+  }
+  
+  // Content
+  .plugin-shortcode-content {
+    margin-bottom: $spacing-medium;
+    
+    .plugin-shortcode-post {
+      h3 {
+        font-size: $font-size-medium;
+        margin: 0 0 $spacing-small;
+      }
+      
+      .plugin-shortcode-excerpt {
+        line-height: 1.5;
+        margin-bottom: $spacing-small;
+      }
+      
+      .plugin-shortcode-link {
+        display: inline-block;
+        color: $primary-color;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color $transition-fast;
+        
+        &:hover {
+          color: $secondary-color;
+          text-decoration: underline;
+        }
+      }
+    }
+    
+    .plugin-shortcode-error {
+      color: #d63638;
+      font-style: italic;
+    }
+    
+    .plugin-shortcode-default {
+      background: lighten($border-color, 10%);
+      border: 1px solid $border-color;
+      border-radius: 3px;
+      padding: $spacing-medium;
+      
+      p {
+        margin: 0 0 $spacing-small;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  
+  // Footer
+  .plugin-shortcode-footer {
+    font-size: $font-size-small;
+    color: lighten($text-color, 20%);
+    padding-top: $spacing-small;
+    border-top: 1px solid $border-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .plugin-shortcode-info {
+      font-style: italic;
+    }
+  }
+}
+
+// Responsive styles
+@media (max-width: $breakpoint-tablet) {
+  .plugin-shortcode-container {
+    .plugin-shortcode-header {
+      .plugin-shortcode-title {
+        font-size: $font-size-medium;
+      }
+    }
+    
+    .plugin-shortcode-content {
+      .plugin-shortcode-post {
+        h3 {
+          font-size: $font-size-small;
+        }
+      }
+    }
+  }
+}
