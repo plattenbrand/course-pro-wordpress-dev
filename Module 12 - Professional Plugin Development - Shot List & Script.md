@@ -44,9 +44,9 @@
 
 **TEXT:** "Let's examine our production build process implemented in the scripts/build-production.js file. This Node.js script creates optimized, production-ready versions of our plugin by removing development files, compiling assets for production, and converting development version markers to production versions. It uses the .distignore file to exclude development-only files and directories from the production build. The script can be triggered with 'npm run build:prod' and optionally can push directly to a production repository. This automation ensures consistent, clean production builds and eliminates the human error factor from the release process. When combined with our version management system, we get a streamlined workflow from development to production."
 
-## Shot 12: GitHub Actions for Branch-Based Releases (Screen Recording)
+## Shot 12: Separate Production Repository Approach (Screen Recording)
 
-**TEXT:** "Now let's extend our build process to work with Deployer for Git's branch-based approach. We'll set up a GitHub Actions workflow that triggers on version tags and automatically creates clean release branches. This workflow will checkout the tagged commit, build production assets, remove development files according to our .distignore file, strip the '-dev' suffix from all version references, and push a dedicated release branch named 'release/vX.Y.Z'. This branch contains only the production-ready code with all development artifacts removed. By configuring our workflow to use these dedicated release branches, we create a seamless pipeline from development to production, with clear separation between environments and automatic updates through SatisPress."
+**TEXT:** "Let's examine our production deployment strategy using separate repositories. We maintain our development code in a repository named 'plugin-name-dev' with the '-dev' suffix in filenames, while production-ready code lives in a separate 'plugin-name-production' repository that SatisPress monitors. Our build-production.js script already supports this approach with the '--push --repo' options, allowing us to build a clean production version and push it directly to the production repository. Let's see how this works: when we run 'npm run deploy:prod', the script builds the assets, removes development files according to our .distignore, strips the '-dev' suffix from all version references, and pushes the clean code to the production repository. This approach maintains complete separation between development and production code while giving SatisPress a clean repository to pull from."
 
 ## Shot 13: Plugin Versioning Best Practices (Talking Head with Graphics)
 
@@ -145,9 +145,9 @@
 
 ### SatisPress Integration:
 - Deployer for Git Pro configuration
-- Branch-based release strategy
-- Release branch pattern monitoring
-- Clean release branch generation
+- Separate production repository strategy
+- Production repository monitoring
+- Automated production repository updates
 - WordPress update system integration
 - Version availability management
 

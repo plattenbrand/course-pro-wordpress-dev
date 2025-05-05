@@ -129,6 +129,19 @@
 - Content synchronization strategies
 - Scaling multisite networks
 
+## Module 12: Professional Plugin Development (20 minutes)
+
+- Plugin development challenges and best practices
+- Modern plugin structure with development/production separation
+- PHP class organization and namespacing
+- Asset management with TypeScript and SCSS
+- Version management with npm scripts
+- Production build process with automation scripts
+- Separate production repository workflow
+- SatisPress integration with Deployer for Git
+- Plugin versioning and update strategies
+- Maintaining multiple plugin versions
+
 ## Conclusion (5 minutes)
 
 - Recap of the complete workflow
@@ -221,6 +234,16 @@
 - Show site-specific configurations
 - Demonstrate domain mapping setup
 - Show multisite synchronization techniques
+
+### Module 12: Professional Plugin Development
+
+- Demonstrate starter-plugin-dev structure and organization
+- Show TypeScript and SCSS compilation in action
+- Walk through version management with npm scripts
+- Demonstrate the build-production.js process
+- Show the separate production repository deployment process
+- Demonstrate plugin installation via SatisPress
+- Show version update process from dev to production
 
 ### Conclusion
 
